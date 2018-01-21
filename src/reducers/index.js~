@@ -1,0 +1,9 @@
+// main reducers
+
+import { combineReducers } from 'react-redux'
+
+const reducer = combineReducers({
+    drawer
+})
+
+export default reducer

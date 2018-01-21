@@ -1,0 +1,13 @@
+
+
+const drawer = ( state='SHA256', action ) =>{
+    switch(action.type){
+	case 'CRYPTO':
+	    return action.reddit
+	default:
+	    return state
+    }
+}
+
+
+export default drawer

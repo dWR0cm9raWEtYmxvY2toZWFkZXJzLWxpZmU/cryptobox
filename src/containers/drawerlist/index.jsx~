@@ -1,0 +1,21 @@
+q
+
+import React, { Component } from 'react'
+import DrawerListModal from '../../components/drawer/drawerlist'
+import { connect } from 'react-redux'
+
+
+class DrawerList extends Component{
+    render(){
+	console.log(this.props)
+	return(
+	    <DrawerListModal/>
+	)
+    }
+}
+
+const mapStateToProps = state =>({
+    drawer : state.drawer
+})
+
+export default connect(mapStateToProps)(DrawerList)
